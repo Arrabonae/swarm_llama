@@ -1,6 +1,6 @@
 ![Swarm Logo](assets/logo.png)
 
-# Swarm (experimental, educational)
+# Swarm-Ollama (experimental, educational)
 
 An educational framework exploring ergonomic, lightweight multi-agent orchestration.
 
@@ -357,3 +357,6 @@ run_demo_loop(agent, stream=True)
 - Charu Jaiswal - [charuj](https://github.com/charuj)
 - Colin Jarvis - [colin-openai](https://github.com/colin-openai)
 - Katia Gil Guzman - [katia-openai](https://github.com/katia-openai)
+
+# Inspired by
+- Arrabonae - [Arrabonae](https://github.com/Arrabonae)

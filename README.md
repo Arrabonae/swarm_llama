@@ -26,9 +26,9 @@ pip install git+https://github.com/openai/swarm.git
 ## Usage
 
 ```python
-from swarm import Swarm, Agent
+from swarm_ollama import Swarm, Agent
 
-client = Swarm()
+client = Swarm(base_url="http://<your-ip>:11434")
 
 def transfer_to_agent_b():
     return agent_b
@@ -108,7 +108,7 @@ Check out `/examples` for inspiration! Learn more about each one in its README.
 Start by instantiating a Swarm client (which internally just instantiates an `OpenAI` client).
 
 ```python
-from swarm import Swarm
+from swarm_ollama import Swarm
 
 client = Swarm()
 ```
@@ -344,7 +344,7 @@ Evaluations are crucial to any project, and we encourage developers to bring the
 Use the `run_demo_loop` to test out your swarm! This will run a REPL on your command line. Supports streaming.
 
 ```python
-from swarm.repl import run_demo_loop
+from swarm_ollama.repl import run_demo_loop
 ...
 run_demo_loop(agent, stream=True)
 ```

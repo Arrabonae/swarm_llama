@@ -1,7 +1,5 @@
 import json
-
-from swarm import Swarm
-
+from swarm_ollama import Swarm
 
 def process_and_print_streaming_response(response):
     content = ""
@@ -40,7 +38,7 @@ def pretty_print_messages(messages) -> None:
             continue
 
         # print agent name in blue
-        print(f"\033[94m{message['sender']}\033[0m:", end=" ")
+        print(f"\033[94mAssistant\033[0m:", end=" ")
 
         # print response, if any
         if message["content"]:

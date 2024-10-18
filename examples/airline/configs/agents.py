@@ -3,7 +3,7 @@ from data.routines.baggage.policies import *
 from data.routines.flight_modification.policies import *
 from data.routines.prompts import STARTER_PROMPT
 
-from swarm import Agent
+from swarm_ollama import Agent
 
 
 def transfer_to_flight_modification():
@@ -23,7 +23,7 @@ def transfer_to_lost_baggage():
 
 
 def transfer_to_triage():
-    """Call this function when a user needs to be transferred to a differnt agent and a different policy.
+    """Call this function when a user needs to be transferred to a different agent and a different policy.
     For instance, if a user is asking about a topic that is not handled by the current agent, call this function.
     """
     return triage_agent
